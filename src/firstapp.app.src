@@ -1,0 +1,14 @@
+%% -*- erlang -*-
+{application, firstapp,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  riak_core
+                 ]},
+  {mod, { firstapp_app, []}},
+  {env, []}
+ ]}.

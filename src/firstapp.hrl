@@ -1,0 +1,3 @@
+-define(PRINT(Var), io:format("DEBUG: ~p:~p - ~p~n~n ~p~n~n", [?MODULE, ?LINE, ??Var, Var])).
+-define(LOG(Var), lager:log(error, self(), "DEBUG: ~p:~p - ~p", [?MODULE, ?LINE, Var])).
+-define(LOG(Label, Var), lager:log(error, self(), "DEBUG: ~p:~p - ~p = ~p~n", [?MODULE, ?LINE, Label, Var])).
